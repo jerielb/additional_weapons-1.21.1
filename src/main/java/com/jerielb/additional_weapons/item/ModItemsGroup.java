@@ -34,6 +34,7 @@ public class ModItemsGroup {
 						entries.add(ModItems.CRABCLAW);
 						entries.add(ModItems.PUMPKINHEAD);
 						entries.add(ModItems.FAIRY_HARP);
+						entries.add(ModItems.METAL_CHOCOBO);
 						entries.add(ModItems.OLYMPIA);
 						entries.add(ModItems.LADY_LUCK);
 						entries.add(ModItems.OBLIVION);
