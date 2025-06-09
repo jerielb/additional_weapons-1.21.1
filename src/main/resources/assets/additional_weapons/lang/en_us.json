@@ -1,5 +1,25 @@
 {
   "itemgroup.additional_weapons.misc": "Misc",
+  "itemgroup.additional_weapons.keyblades": "Keyblades",
   
-  "item.additional_weapons.munny": "Munny"
+  "item.additional_weapons.munny": "Munny",
+
+  "item.additional_weapons.kingdom_key": "Kingdom Key",
+  "item.additional_weapons.jungle_king": "Jungle King",
+  "item.additional_weapons.three_wishes": "Three Wishes",
+  "item.additional_weapons.wishing_star": "Wishing Star",
+  "item.additional_weapons.spellbinder": "Spellbinder",
+  "item.additional_weapons.crabclaw": "Crabclaw",
+  "item.additional_weapons.pumpkinhead": "Pumpkinhead",
+  "item.additional_weapons.fairy_harp": "Fairy Harp",
+  "item.additional_weapons.metal_chocobo": "Metal Chocobo",
+  "item.additional_weapons.olympia": "Olympia",
+  "item.additional_weapons.lady_luck": "Lady Luck",
+  "item.additional_weapons.oblivion": "Oblivion",
+  "item.additional_weapons.divine_rose": "Divine Rose",
+  "item.additional_weapons.oathkeeper": "Oathkeeper",
+  "item.additional_weapons.lionheart": "Lionheart",
+  "item.additional_weapons.diamond_dust": "Diamond Dust",
+  "item.additional_weapons.one_winged_angel": "One Winged Angel",
+  "item.additional_weapons.ultima_weapon": "Ultima Weapon"
 }
