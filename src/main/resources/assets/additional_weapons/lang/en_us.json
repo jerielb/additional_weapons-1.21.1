@@ -21,5 +21,7 @@
   "item.additional_weapons.lionheart": "Lionheart",
   "item.additional_weapons.diamond_dust": "Diamond Dust",
   "item.additional_weapons.one_winged_angel": "One Winged Angel",
-  "item.additional_weapons.ultima_weapon": "Ultima Weapon"
+  "item.additional_weapons.ultima_weapon": "Ultima Weapon",
+
+  "entity.minecraft.villager.merchant": "Merchant"
 }

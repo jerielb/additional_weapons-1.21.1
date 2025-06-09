@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "additional_weapons:merchant_poi",
+      "required": false
+    }
+  ]
+}
