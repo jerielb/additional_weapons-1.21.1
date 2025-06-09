@@ -27,6 +27,7 @@ public class ModItemsGroup {
 					.displayName(Text.translatable("itemgroup.additional_weapons.keyblades"))
 					.entries((displayContext, entries) -> {
 						entries.add(ModItems.KINGDOM_KEY);
+						entries.add(ModItems.JUNGLE_KING);
 					})
 					.build());
 	
