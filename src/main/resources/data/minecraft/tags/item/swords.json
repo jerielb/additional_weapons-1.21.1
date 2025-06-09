@@ -1,16 +1,17 @@
 {
   "values": [
-    "additional-weapons:kingdom_key",
-    "additional-weapons:jungle_king",
-    "additional-weapons:three_wishes",
-    "additional-weapons:wishing_star",
-    "additional-weapons:spellbinder",
-    "additional-weapons:crabclaw",
-    "additional-weapons:pumpkinhead",
-    "additional-weapons:fairy_harp",
-    "additional-weapons:olympia",
-    "additional-weapons:lady_luck",
-    "additional-weapons:oblivion",
-    "additional-weapons:divine_rose"
+    "additional_weapons:kingdom_key",
+    "additional_weapons:jungle_king",
+    "additional_weapons:three_wishes",
+    "additional_weapons:wishing_star",
+    "additional_weapons:spellbinder",
+    "additional_weapons:crabclaw",
+    "additional_weapons:pumpkinhead",
+    "additional_weapons:fairy_harp",
+    "additional_weapons:olympia",
+    "additional_weapons:lady_luck",
+    "additional_weapons:oblivion",
+    "additional_weapons:divine_rose",
+    "additional_weapons:oathkeeper"
   ]
 }
