@@ -30,6 +30,8 @@ public class ModItems {
 			.attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 8, -1.9F))));
 	public static final Item OLYMPIA = registerItem("olympia", new SwordItem(ToolMaterials.NETHERITE, (new Item.Settings()).fireproof()
 			.attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 10, -2.4F))));
+	public static final Item LADY_LUCK = registerItem("lady_luck", new SwordItem(ToolMaterials.NETHERITE, (new Item.Settings()).fireproof()
+			.attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 8, -1.4F))));
 	
 	private static Item registerItem(String name, Item item) {
 		return Registry.register(Registries.ITEM, Identifier.of(AdditionalWeapons.MOD_ID, name), item);
