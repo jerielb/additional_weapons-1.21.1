@@ -31,6 +31,7 @@ public class ModItemsGroup {
 						entries.add(ModItems.THREE_WISHES);
 						entries.add(ModItems.WISHING_STAR);
 						entries.add(ModItems.SPELLBINDER);
+						entries.add(ModItems.CRABCLAW);
 					})
 					.build());
 	
