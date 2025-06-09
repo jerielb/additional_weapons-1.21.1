@@ -20,6 +20,16 @@ public class ModItemsGroup {
 					})
 					.build());
 	
+	public static final ItemGroup KEYBLADES = Registry.register(Registries.ITEM_GROUP,
+			Identifier.of(AdditionalWeapons.MOD_ID, "keyblades"),
+			FabricItemGroup.builder()
+					.icon(() -> new ItemStack(ModItems.KINGDOM_KEY)) // icon of the creative tab
+					.displayName(Text.translatable("itemgroup.additional_weapons.keyblades"))
+					.entries((displayContext, entries) -> {
+						entries.add(ModItems.KINGDOM_KEY);
+					})
+					.build());
+	
 	public static void registerItemGroups() {
 		AdditionalWeapons.LOGGER.info("Registering Item Groups for " + AdditionalWeapons.MOD_ID);
 	}

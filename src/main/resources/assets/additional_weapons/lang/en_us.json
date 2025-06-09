@@ -1,5 +1,8 @@
 {
   "itemgroup.additional_weapons.misc": "Misc",
+  "itemgroup.additional_weapons.keyblades": "Keyblades",
   
-  "item.additional_weapons.munny": "Munny"
+  "item.additional_weapons.munny": "Munny",
+
+  "item.additional_weapons.kingdom_key": "Kingdom Key"
 }
