@@ -40,6 +40,7 @@ public class ModItemsGroup {
 						entries.add(ModItems.DIVINE_ROSE);
 						entries.add(ModItems.OATHKEEPER);
 						entries.add(ModItems.LIONHEART);
+						entries.add(ModItems.DIAMOND_DUST);
 					})
 					.build());
 	
