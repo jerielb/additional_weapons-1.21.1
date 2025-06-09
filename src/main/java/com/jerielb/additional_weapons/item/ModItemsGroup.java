@@ -33,6 +33,7 @@ public class ModItemsGroup {
 						entries.add(ModItems.SPELLBINDER);
 						entries.add(ModItems.CRABCLAW);
 						entries.add(ModItems.PUMPKINHEAD);
+						entries.add(ModItems.FAIRY_HARP);
 					})
 					.build());
 	
