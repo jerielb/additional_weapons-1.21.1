@@ -30,6 +30,7 @@ public class ModItemsGroup {
 						entries.add(ModItems.JUNGLE_KING);
 						entries.add(ModItems.THREE_WISHES);
 						entries.add(ModItems.WISHING_STAR);
+						entries.add(ModItems.SPELLBINDER);
 					})
 					.build());
 	
