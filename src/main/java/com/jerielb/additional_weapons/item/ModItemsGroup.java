@@ -43,6 +43,7 @@ public class ModItemsGroup {
 						entries.add(ModItems.LIONHEART);
 						entries.add(ModItems.DIAMOND_DUST);
 						entries.add(ModItems.ONE_WINGED_ANGEL);
+						entries.add(ModItems.ULTIMA_WEAPON);
 					})
 					.build());
 	
