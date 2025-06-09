@@ -36,6 +36,7 @@ public class ModItemsGroup {
 						entries.add(ModItems.FAIRY_HARP);
 						entries.add(ModItems.OLYMPIA);
 						entries.add(ModItems.LADY_LUCK);
+						entries.add(ModItems.OBLIVION);
 					})
 					.build());
 	
