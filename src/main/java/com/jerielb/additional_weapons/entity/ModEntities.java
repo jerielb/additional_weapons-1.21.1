@@ -52,7 +52,7 @@ public class ModEntities {
 	
 	public static final EntityType<ShadowEntity> SHADOW = Registry.register(
 			Registries.ENTITY_TYPE,
-			Identifier.of(AdditionalWeapons.MOD_ID, "white_mushroom"),
+			Identifier.of(AdditionalWeapons.MOD_ID, "shadow"),
 			EntityType.Builder.create(ShadowEntity::new, SpawnGroup.MONSTER)
 					.dimensions(0.6F, 1.95F)
 					.build()
