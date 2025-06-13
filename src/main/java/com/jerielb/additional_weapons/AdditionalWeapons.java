@@ -1,8 +1,10 @@
 package com.jerielb.additional_weapons;
 
+import com.jerielb.additional_weapons.entity.ModEntities;
 import com.jerielb.additional_weapons.item.ModItems;
 import com.jerielb.additional_weapons.item.ModItemsGroup;
 import com.jerielb.additional_weapons.villager.ModVillagers;
+import com.jerielb.additional_weapons.world.gen.ModEntitySpawns;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
@@ -23,6 +25,9 @@ public class AdditionalWeapons implements ModInitializer {
 	public void onInitialize() {
 		ModItemsGroup.registerItemGroups();
 		ModItems.registerModItems();
+		
+		ModEntities.registerModEntities();
+		ModEntitySpawns.addSpawns();
 		
 		ModVillagers.registerVillagers();
 		// Merchant Trades
