@@ -4,6 +4,10 @@
     {
       "id": "additional_weapons:merchant_poi",
       "required": false
+    },
+    {
+      "id": "additional_weapons:merchant_2_poi",
+      "required": false
     }
   ]
 }

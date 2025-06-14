@@ -2,6 +2,7 @@ package com.jerielb.additional_weapons.villager;
 
 import com.google.common.collect.ImmutableSet;
 import com.jerielb.additional_weapons.AdditionalWeapons;
+import com.jerielb.additional_weapons.block.ModBlocks;
 import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -16,9 +17,14 @@ import net.minecraft.world.poi.PointOfInterestType;
 
 public class ModVillagers {
 	public static final RegistryKey<PointOfInterestType> MERCHANT_POI_KEY = registerPoiKey("merchant_poi");
-	public static final PointOfInterestType MERCHANT_POI = registerPOI("merchant_poi", Blocks.CHISELED_POLISHED_BLACKSTONE);
+	public static final PointOfInterestType MERCHANT_POI = registerPOI("merchant_poi", ModBlocks.CHISELED_POLISHED_BLACKSTONE_1);
 	
 	public static final VillagerProfession MERCHANT = registerProfession("merchant", MERCHANT_POI_KEY);
+	
+	public static final RegistryKey<PointOfInterestType> MERCHANT_2_POI_KEY = registerPoiKey("merchant_2_poi");
+	public static final PointOfInterestType MERCHANT_2_POI = registerPOI("merchant_2_poi", ModBlocks.CHISELED_POLISHED_BLACKSTONE_2);
+	
+	public static final VillagerProfession MERCHANT_2 = registerProfession("merchant_2", MERCHANT_2_POI_KEY);
 	
 	private static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
 		return Registry.register(Registries.VILLAGER_PROFESSION, Identifier.of(AdditionalWeapons.MOD_ID, name),
