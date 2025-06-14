@@ -57,22 +57,22 @@ public class AdditionalWeapons implements ModInitializer {
 		// APPRENTICE
 		TradeOfferHelper.registerVillagerOffers(ModVillagers.MERCHANT, 2, factories -> {
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 16),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.CRABCLAW, 1), 4, 7, 0.04f)
 			));
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 16),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.PUMPKINHEAD, 1), 4, 7, 0.04f)
 			));
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 16),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.FAIRY_HARP, 1), 4, 7, 0.04f)
 			));
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 16),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.METAL_CHOCOBO, 1), 4, 7, 0.04f)
 			));
@@ -80,22 +80,22 @@ public class AdditionalWeapons implements ModInitializer {
 		// JOURNEYMAN
 		TradeOfferHelper.registerVillagerOffers(ModVillagers.MERCHANT, 3, factories -> {
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 32),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.OLYMPIA, 1), 4, 7, 0.04f)
 			));
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 32),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.LADY_LUCK, 1), 4, 7, 0.04f)
 			));
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 32),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.OBLIVION, 1), 4, 7, 0.04f)
 			));
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 32),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.DIVINE_ROSE, 1), 4, 7, 0.04f)
 			));
@@ -103,22 +103,22 @@ public class AdditionalWeapons implements ModInitializer {
 		// EXPERT
 		TradeOfferHelper.registerVillagerOffers(ModVillagers.MERCHANT, 4, factories -> {
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 48),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.OATHKEEPER, 1), 4, 7, 0.04f)
 			));
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 48),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.LIONHEART, 1), 4, 7, 0.04f)
 			));
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 48),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.DIAMOND_DUST, 1), 4, 7, 0.04f)
 			));
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.MUNNY, 8),
+					new TradedItem(ModItems.MUNNY, 48),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.ONE_WINGED_ANGEL, 1), 4, 7, 0.04f)
 			));
@@ -126,7 +126,7 @@ public class AdditionalWeapons implements ModInitializer {
 		// MASTER
 		TradeOfferHelper.registerVillagerOffers(ModVillagers.MERCHANT, 5, factories -> {
 			factories.add(((entity, random) -> new TradeOffer(
-					new TradedItem(Items.NETHERITE_INGOT, 4),
+					new TradedItem(ModItems.MUNNY, 64),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
 					new ItemStack(ModItems.ULTIMA_WEAPON, 1), 4, 7, 0.04f)
 			));
