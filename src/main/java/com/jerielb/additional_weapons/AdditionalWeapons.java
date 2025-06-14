@@ -152,7 +152,7 @@ public class AdditionalWeapons implements ModInitializer {
 			factories.add(((entity, random) -> new TradeOffer(
 					new TradedItem(ModItems.MUNNY, 64),
 					Optional.of(new TradedItem(ModItems.KINGDOM_KEY, 1)),
-					new ItemStack(ModItems.ULTIMA_WEAPON, 1), 4, 100, 0.04f)
+					new ItemStack(ModItems.KINGDOM_KEY_DARKSIDE, 1), 4, 100, 0.04f)
 			));
 		});
 	}

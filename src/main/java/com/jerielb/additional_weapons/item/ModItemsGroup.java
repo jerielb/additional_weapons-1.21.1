@@ -54,6 +54,7 @@ public class ModItemsGroup {
 						entries.add(ModItems.DIAMOND_DUST);
 						entries.add(ModItems.ONE_WINGED_ANGEL);
 						entries.add(ModItems.ULTIMA_WEAPON);
+						entries.add(ModItems.KINGDOM_KEY_DARKSIDE);
 					})
 					.build());
 	
