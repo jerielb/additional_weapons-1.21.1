@@ -67,7 +67,6 @@ public class ModEntities {
 		FabricDefaultAttributeRegistry.register(POWER_WILD, PowerWildEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(WHITE_MUSHROOM, WhiteMushroomEntity.createAttributes());
 		
-		FabricDefaultAttributeRegistry.register(SHADOW, WhiteMushroomEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(SHADOW, ShadowEntity.createAttributes());
 	}
 }

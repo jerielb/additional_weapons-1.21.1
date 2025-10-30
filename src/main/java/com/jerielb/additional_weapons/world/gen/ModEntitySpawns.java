@@ -66,7 +66,6 @@ public class ModEntitySpawns {
 				),
 				SpawnGroup.MONSTER, ModEntities.SHADOW, 100, 1, 2);
 		
-		SpawnRestriction.register(ModEntities.SHADOW, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, BanditEntity::canSpawnInDark);
 		SpawnRestriction.register(ModEntities.SHADOW, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ShadowEntity::canSpawnInDark);
 		
 	}
