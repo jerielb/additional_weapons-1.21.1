@@ -18,24 +18,7 @@ public class ModItemsGroup {
 					.displayName(Text.translatable("itemgroup.additional_weapons.misc"))
 					.entries((displayContext, entries) -> {
 						entries.add(ModItems.MUNNY);
-						entries.add(ModBlocks.CHISELED_POLISHED_BLACKSTONE_1);
-						entries.add(ModBlocks.CHISELED_POLISHED_BLACKSTONE_2);
 						
-						entries.add(ModItems.SOLDIER_SPAWN_EGG);
-						entries.add(ModItems.BANDIT_SPAWN_EGG);
-						entries.add(ModItems.PIRATE_SPAWN_EGG);
-						entries.add(ModItems.POWER_WILD_SPAWN_EGG);
-						entries.add(ModItems.WHITE_MUSHROOM_SPAWN_EGG);
-						entries.add(ModItems.SHADOW_SPAWN_EGG);
-					})
-					.build());
-	
-	public static final ItemGroup KEYBLADES = Registry.register(Registries.ITEM_GROUP,
-			Identifier.of(AdditionalWeapons.MOD_ID, "keyblades"),
-			FabricItemGroup.builder()
-					.icon(() -> new ItemStack(ModItems.KINGDOM_KEY)) // icon of the creative tab
-					.displayName(Text.translatable("itemgroup.additional_weapons.keyblades"))
-					.entries((displayContext, entries) -> {
 						entries.add(ModItems.KINGDOM_KEY);
 						entries.add(ModItems.JUNGLE_KING);
 						entries.add(ModItems.THREE_WISHES);
@@ -55,6 +38,16 @@ public class ModItemsGroup {
 						entries.add(ModItems.ONE_WINGED_ANGEL);
 						entries.add(ModItems.ULTIMA_WEAPON);
 						entries.add(ModItems.KINGDOM_KEY_DARKSIDE);
+						
+						entries.add(ModBlocks.CHISELED_POLISHED_BLACKSTONE_1);
+						entries.add(ModBlocks.CHISELED_POLISHED_BLACKSTONE_2);
+						
+						entries.add(ModItems.SOLDIER_SPAWN_EGG);
+						entries.add(ModItems.BANDIT_SPAWN_EGG);
+						entries.add(ModItems.PIRATE_SPAWN_EGG);
+						entries.add(ModItems.POWER_WILD_SPAWN_EGG);
+						entries.add(ModItems.WHITE_MUSHROOM_SPAWN_EGG);
+						entries.add(ModItems.SHADOW_SPAWN_EGG);
 					})
 					.build());
 	
