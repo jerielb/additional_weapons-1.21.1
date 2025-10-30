@@ -22,6 +22,24 @@
   "item.additional_weapons.diamond_dust": "Diamond Dust",
   "item.additional_weapons.one_winged_angel": "One Winged Angel",
   "item.additional_weapons.ultima_weapon": "Ultima Weapon",
+  "item.additional_weapons.kingdom_key_darkside": "Kingdom Key Darkside",
+  
+  "block.additional_weapons.chiseled_polished_blackstone_1": "Chiseled Polished Blackstone",
+  "block.additional_weapons.chiseled_polished_blackstone_2": "Chiseled Polished Blackstone",
 
-  "entity.minecraft.villager.merchant": "Merchant"
+  "entity.minecraft.villager.merchant": "Merchant",
+  "entity.minecraft.villager.merchant_2": "Merchant",
+
+  "item.additional_weapons.soldier_spawn_egg": "Soldier Spawn Egg",
+  "item.additional_weapons.bandit_spawn_egg": "Bandit Spawn Egg",
+  "item.additional_weapons.pirate_spawn_egg": "Pirate Spawn Egg",
+  "item.additional_weapons.power_wild_spawn_egg": "Power Wild Spawn Egg",
+  "item.additional_weapons.shadow_spawn_egg": "Shadow Spawn Egg",
+  "item.additional_weapons.white_mushroom_spawn_egg": "White Mushroom Spawn Egg",
+  "entities.additional_weapons.soldier": "Soldier",
+  "entities.additional_weapons.bandit": "Bandit",
+  "entities.additional_weapons.pirate": "Pirate",
+  "entities.additional_weapons.power_wild": "Power Wild",
+  "entities.additional_weapons.white_mushroom": "White Mushroom",
+  "entities.additional_weapons.shadow": "Shadow"
 }

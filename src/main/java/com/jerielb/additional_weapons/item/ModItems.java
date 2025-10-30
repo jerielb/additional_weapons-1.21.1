@@ -1,7 +1,9 @@
 package com.jerielb.additional_weapons.item;
 
 import com.jerielb.additional_weapons.AdditionalWeapons;
+import com.jerielb.additional_weapons.entity.ModEntities;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
@@ -48,6 +50,22 @@ public class ModItems {
 			.attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 8, -3.4F))));
 	public static final Item ULTIMA_WEAPON = registerItem("ultima_weapon", new SwordItem(ToolMaterials.NETHERITE, (new Item.Settings()).fireproof()
 			.attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 13, -1.4F))));
+	public static final Item KINGDOM_KEY_DARKSIDE = registerItem("kingdom_key_darkside", new SwordItem(ToolMaterials.NETHERITE, (new Item.Settings()).fireproof()
+			.attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 13, -1.4F))));
+	
+	// entity spawn eggs
+	public static final Item SOLDIER_SPAWN_EGG = registerItem("soldier_spawn_egg",
+			new SpawnEggItem(ModEntities.SOLDIER, 0x1E274E, 0xBBC0C6, new Item.Settings()));
+	public static final Item BANDIT_SPAWN_EGG = registerItem("bandit_spawn_egg",
+			new SpawnEggItem(ModEntities.BANDIT, 0x3A3522, 0xB6BB92, new Item.Settings()));
+	public static final Item PIRATE_SPAWN_EGG = registerItem("pirate_spawn_egg",
+			new SpawnEggItem(ModEntities.PIRATE, 0x1F2429, 0xB90613, new Item.Settings()));
+	public static final Item POWER_WILD_SPAWN_EGG = registerItem("power_wild_spawn_egg",
+			new SpawnEggItem(ModEntities.POWER_WILD, 0x6EA3C5, 0x374B63, new Item.Settings()));
+	public static final Item WHITE_MUSHROOM_SPAWN_EGG = registerItem("white_mushroom_spawn_egg",
+			new SpawnEggItem(ModEntities.WHITE_MUSHROOM, 0xCCC483, 0xB92A2E, new Item.Settings()));
+	public static final Item SHADOW_SPAWN_EGG = registerItem("shadow_spawn_egg",
+			new SpawnEggItem(ModEntities.SHADOW, 0x070707, 0xA28B2D, new Item.Settings()));
 	
 	private static Item registerItem(String name, Item item) {
 		return Registry.register(Registries.ITEM, Identifier.of(AdditionalWeapons.MOD_ID, name), item);

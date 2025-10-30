@@ -1,6 +1,7 @@
 package com.jerielb.additional_weapons.item;
 
 import com.jerielb.additional_weapons.AdditionalWeapons;
+import com.jerielb.additional_weapons.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,15 @@ public class ModItemsGroup {
 					.displayName(Text.translatable("itemgroup.additional_weapons.misc"))
 					.entries((displayContext, entries) -> {
 						entries.add(ModItems.MUNNY);
+						entries.add(ModBlocks.CHISELED_POLISHED_BLACKSTONE_1);
+						entries.add(ModBlocks.CHISELED_POLISHED_BLACKSTONE_2);
+						
+						entries.add(ModItems.SOLDIER_SPAWN_EGG);
+						entries.add(ModItems.BANDIT_SPAWN_EGG);
+						entries.add(ModItems.PIRATE_SPAWN_EGG);
+						entries.add(ModItems.POWER_WILD_SPAWN_EGG);
+						entries.add(ModItems.WHITE_MUSHROOM_SPAWN_EGG);
+						entries.add(ModItems.SHADOW_SPAWN_EGG);
 					})
 					.build());
 	
@@ -44,6 +54,7 @@ public class ModItemsGroup {
 						entries.add(ModItems.DIAMOND_DUST);
 						entries.add(ModItems.ONE_WINGED_ANGEL);
 						entries.add(ModItems.ULTIMA_WEAPON);
+						entries.add(ModItems.KINGDOM_KEY_DARKSIDE);
 					})
 					.build());
 	
