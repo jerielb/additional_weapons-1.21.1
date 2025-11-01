@@ -54,7 +54,7 @@ public class ModEntities {
 			Registries.ENTITY_TYPE,
 			Identifier.of(AdditionalWeapons.MOD_ID, "shadow"),
 			EntityType.Builder.create(ShadowEntity::new, SpawnGroup.MONSTER)
-					.dimensions(0.6F, 1.95F)
+					.dimensions(0.6F, 1.7F)
 					.build()
 	);
 	
@@ -67,6 +67,6 @@ public class ModEntities {
 		FabricDefaultAttributeRegistry.register(POWER_WILD, PowerWildEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(WHITE_MUSHROOM, WhiteMushroomEntity.createAttributes());
 		
-		FabricDefaultAttributeRegistry.register(SHADOW, WhiteMushroomEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(SHADOW, ShadowEntity.createAttributes());
 	}
 }

@@ -1,7 +1,7 @@
 package com.jerielb.additional_weapons.world.gen;
 
 import com.jerielb.additional_weapons.entity.ModEntities;
-import com.jerielb.additional_weapons.entity.custom.BanditEntity;
+import com.jerielb.additional_weapons.entity.custom.*;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.entity.SpawnGroup;
@@ -20,7 +20,7 @@ public class ModEntitySpawns {
 				),
 				SpawnGroup.MONSTER, ModEntities.SOLDIER, 100, 1, 2);
 		
-		SpawnRestriction.register(ModEntities.SOLDIER, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, BanditEntity::canSpawnInDark);
+		SpawnRestriction.register(ModEntities.SOLDIER, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, SoldierEntity::canSpawnInDark);
 		
 		// Heartless Bandit
 		BiomeModifications.addSpawn(BiomeSelectors.includeByKey(
@@ -38,7 +38,7 @@ public class ModEntitySpawns {
 				),
 				SpawnGroup.MONSTER, ModEntities.PIRATE, 100, 1, 2);
 		
-		SpawnRestriction.register(ModEntities.PIRATE, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, BanditEntity::canSpawnInDark);
+		SpawnRestriction.register(ModEntities.PIRATE, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, PirateEntity::canSpawnInDark);
 		
 		// Heartless Power Wild
 		BiomeModifications.addSpawn(BiomeSelectors.includeByKey(
@@ -47,7 +47,7 @@ public class ModEntitySpawns {
 				),
 				SpawnGroup.MONSTER, ModEntities.POWER_WILD, 100, 1, 2);
 		
-		SpawnRestriction.register(ModEntities.POWER_WILD, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, BanditEntity::canSpawnInDark);
+		SpawnRestriction.register(ModEntities.POWER_WILD, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, PowerWildEntity::canSpawnInDark);
 		
 		// Heartless White Mushroom
 		BiomeModifications.addSpawn(BiomeSelectors.includeByKey(
@@ -57,7 +57,7 @@ public class ModEntitySpawns {
 				),
 				SpawnGroup.MONSTER, ModEntities.WHITE_MUSHROOM, 100, 1, 2);
 		
-		SpawnRestriction.register(ModEntities.WHITE_MUSHROOM, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, BanditEntity::canSpawnInDark);
+		SpawnRestriction.register(ModEntities.WHITE_MUSHROOM, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, WhiteMushroomEntity::canSpawnInDark);
 		
 		// Heartless Shadow
 		BiomeModifications.addSpawn(BiomeSelectors.includeByKey(
@@ -66,7 +66,7 @@ public class ModEntitySpawns {
 				),
 				SpawnGroup.MONSTER, ModEntities.SHADOW, 100, 1, 2);
 		
-		SpawnRestriction.register(ModEntities.SHADOW, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, BanditEntity::canSpawnInDark);
+		SpawnRestriction.register(ModEntities.SHADOW, SpawnLocationTypes.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ShadowEntity::canSpawnInDark);
 		
 	}
 }
