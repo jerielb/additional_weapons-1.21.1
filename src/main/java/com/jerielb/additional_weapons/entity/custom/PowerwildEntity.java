@@ -7,8 +7,8 @@ import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.world.World;
 
-public class PowerWildEntity extends ZombieEntity {
-	public PowerWildEntity(EntityType<? extends PowerWildEntity> entityType, World world) {
+public class PowerwildEntity extends ZombieEntity {
+	public PowerwildEntity(EntityType<? extends PowerwildEntity> entityType, World world) {
 		super(entityType, world);
 	}
 	

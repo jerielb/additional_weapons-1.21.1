@@ -9,10 +9,10 @@ import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.util.Identifier;
 
 @Environment(EnvType.CLIENT)
-public class PowerWildEntityRenderer extends ZombieEntityRenderer {
-	private static final Identifier TEXTURE = Identifier.of(AdditionalWeapons.MOD_ID, "textures/entity/power_wild.png");
+public class PowerwildEntityRenderer extends ZombieEntityRenderer {
+	private static final Identifier TEXTURE = Identifier.of(AdditionalWeapons.MOD_ID, "textures/entity/powerwild.png");
 	
-	public PowerWildEntityRenderer(EntityRendererFactory.Context context) {
+	public PowerwildEntityRenderer(EntityRendererFactory.Context context) {
 		super(context);
 	}
 	
