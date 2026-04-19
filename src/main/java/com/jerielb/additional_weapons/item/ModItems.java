@@ -2,10 +2,9 @@ package com.jerielb.additional_weapons.item;
 
 import com.jerielb.additional_weapons.AdditionalWeapons;
 import com.jerielb.additional_weapons.entity.ModEntities;
-import net.minecraft.item.Item;
-import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterials;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.BannerPatternsComponent;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -52,6 +51,11 @@ public class ModItems {
 			.attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 13, -1.4F))));
 	public static final Item KINGDOM_KEY_DARKSIDE = registerItem("kingdom_key_darkside", new SwordItem(ToolMaterials.NETHERITE, (new Item.Settings()).fireproof()
 			.attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 13, -1.4F))));
+	
+	// shields
+	public static final Item KNIGHTS_SHIELD = registerItem("knights_shield", new ShieldItem(new Item.Settings().maxDamage(336)));
+	public static final Item DREAM_SHIELD = registerItem("dream_shield", new ShieldItem(new Item.Settings().maxDamage(336)));
+	
 	
 	// entity spawn eggs
 	public static final Item SOLDIER_SPAWN_EGG = registerItem("soldier_spawn_egg",

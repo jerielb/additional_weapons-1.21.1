@@ -39,6 +39,9 @@ public class ModItemsGroup {
 						entries.add(ModItems.ULTIMA_WEAPON);
 						entries.add(ModItems.KINGDOM_KEY_DARKSIDE);
 						
+						entries.add(ModItems.KNIGHTS_SHIELD);
+						entries.add(ModItems.DREAM_SHIELD);
+						
 						entries.add(ModBlocks.CHISELED_POLISHED_BLACKSTONE_1);
 						entries.add(ModBlocks.CHISELED_POLISHED_BLACKSTONE_2);
 						
