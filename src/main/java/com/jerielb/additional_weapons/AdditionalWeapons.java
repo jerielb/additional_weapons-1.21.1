@@ -1,5 +1,6 @@
 package com.jerielb.additional_weapons;
 
+import com.jerielb.additional_weapons.block.ModBlocks;
 import com.jerielb.additional_weapons.item.ModItems;
 import com.jerielb.additional_weapons.item.ModItemsGroup;
 import net.fabricmc.api.ModInitializer;
@@ -15,8 +16,8 @@ public class AdditionalWeapons implements ModInitializer {
 	public void onInitialize() {
 		ModItemsGroup.registerItemGroups();
 		ModItems.registerModItems();
-//		ModBlocks.registerModBlocks();
-//		
+		ModBlocks.registerModBlocks();
+
 //		ModEntities.registerModEntities();
 //		ModEntitySpawns.addSpawns();
 //		

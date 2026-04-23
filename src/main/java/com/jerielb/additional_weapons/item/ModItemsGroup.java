@@ -1,6 +1,7 @@
 package com.jerielb.additional_weapons.item;
 
 import com.jerielb.additional_weapons.AdditionalWeapons;
+import com.jerielb.additional_weapons.block.ModBlocks;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -21,10 +22,6 @@ public class ModItemsGroup {
 //					.icon(() -> new ItemStack(ModItems.MUNNY)) // icon of the creative tab
 //					.displayName(Text.translatable("itemgroup.additional_weapons.misc"))
 //					.entries((displayContext, entries) -> {
-//						
-//						entries.add(ModBlocks.CHISELED_POLISHED_BLACKSTONE_1);
-//						entries.add(ModBlocks.CHISELED_POLISHED_BLACKSTONE_2);
-//						
 //						entries.add(ModItems.SOLDIER_SPAWN_EGG);
 //						entries.add(ModItems.BANDIT_SPAWN_EGG);
 //						entries.add(ModItems.PIRATE_SPAWN_EGG);
@@ -63,7 +60,8 @@ public class ModItemsGroup {
 				output.accept(ModItems.KINGDOM_KEY_DARKSIDE);
 				
 				// ### BLOCKS ###
-//				output.accept(ModBlocks.QUARTZ_BLOCK);
+				output.accept(ModBlocks.CHISELED_POLISHED_BLACKSTONE_1);
+				output.accept(ModBlocks.CHISELED_POLISHED_BLACKSTONE_2);
 			})
 			.build();
 	
