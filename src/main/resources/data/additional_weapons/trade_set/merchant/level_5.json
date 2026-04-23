@@ -1,0 +1,7 @@
+{
+  "amount": 1.0,
+  "random_sequence": "additional_weapons:trade_set/merchant/level_5",
+  "trades": [
+    "additional_weapons:merchant/5/munny_and_kingdom_key_ultima_weapon"
+  ]
+}

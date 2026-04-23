@@ -1,0 +1,15 @@
+{
+  "additional_wants": {
+    "id": "additional_weapons:kingdom_key"
+  },
+  "gives": {
+    "id": "additional_weapons:crabclaw"
+  },
+  "max_uses": 16.0,
+  "reputation_discount": 0.05,
+  "wants": {
+    "count": 16.0,
+    "id": "additional_weapons:munny"
+  },
+  "xp": 30.0
+}

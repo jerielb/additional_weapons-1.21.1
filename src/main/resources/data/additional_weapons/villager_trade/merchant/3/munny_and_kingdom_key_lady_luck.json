@@ -1,0 +1,15 @@
+{
+  "additional_wants": {
+    "id": "additional_weapons:kingdom_key"
+  },
+  "gives": {
+    "id": "additional_weapons:lady_luck"
+  },
+  "max_uses": 16.0,
+  "reputation_discount": 0.05,
+  "wants": {
+    "count": 32.0,
+    "id": "additional_weapons:munny"
+  },
+  "xp": 40.0
+}

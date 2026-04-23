@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:chiseled_polished_blackstone"
-  },
+  "ingredient": "minecraft:chiseled_polished_blackstone",
   "result": {
     "id": "additional_weapons:chiseled_polished_blackstone_1",
     "count": 1

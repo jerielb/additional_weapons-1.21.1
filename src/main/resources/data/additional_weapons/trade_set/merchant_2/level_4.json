@@ -1,0 +1,8 @@
+{
+  "amount": 2.0,
+  "random_sequence": "additional_weapons:trade_set/merchant_2/level_4",
+  "trades": [
+    "additional_weapons:merchant_2/4/munny_and_kingdom_key_diamond_dust",
+    "additional_weapons:merchant_2/4/munny_and_kingdom_key_one_winged_angel"
+  ]
+}

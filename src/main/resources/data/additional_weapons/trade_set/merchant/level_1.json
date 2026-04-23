@@ -1,0 +1,8 @@
+{
+  "amount": 2.0,
+  "random_sequence": "additional_weapons:trade_set/merchant/level_1",
+  "trades": [
+    "additional_weapons:merchant/1/munny_and_kingdom_key_jungle_king",
+    "additional_weapons:merchant/1/munny_and_kingdom_key_three_wishes"
+  ]
+}

@@ -26,8 +26,8 @@
   "block.additional_weapons.chiseled_polished_blackstone_1": "Chiseled Polished Blackstone*",
   "block.additional_weapons.chiseled_polished_blackstone_2": "Chiseled Polished Blackstone*",
 
-  "entity.minecraft.villager.merchant": "Merchant",
-  "entity.minecraft.villager.merchant_2": "Merchant",
+  "entity.additional_weapons.villager.merchant": "Merchant",
+  "entity.additional_weapons.villager.merchant_2": "Merchant",
 
   "item.additional_weapons.soldier_spawn_egg": "Soldier Spawn Egg",
   "item.additional_weapons.bandit_spawn_egg": "Bandit Spawn Egg",

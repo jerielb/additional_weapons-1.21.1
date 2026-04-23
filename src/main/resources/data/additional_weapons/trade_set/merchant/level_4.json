@@ -1,0 +1,8 @@
+{
+  "amount": 2.0,
+  "random_sequence": "additional_weapons:trade_set/merchant/level_4",
+  "trades": [
+    "additional_weapons:merchant/4/munny_and_kingdom_key_oathkeeper",
+    "additional_weapons:merchant/4/munny_and_kingdom_key_lionheart"
+  ]
+}
