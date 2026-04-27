@@ -1,23 +1,25 @@
 package com.jerielb.additional_weapons.entity.custom;
 
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.attribute.DefaultAttributeContainer;
-import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.mob.HostileEntity;
-import net.minecraft.entity.mob.HuskEntity;
-import net.minecraft.world.World;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.monster.zombie.Husk;
+import net.minecraft.world.level.Level;
 
-public class BanditEntity extends HuskEntity {
-	public BanditEntity(EntityType<? extends BanditEntity> entityType, World world) {
-		super(entityType, world);
+public class BanditEntity extends Husk {
+	public BanditEntity(EntityType<? extends BanditEntity> entityType, Level level) {
+		super(entityType, level);
 	}
 	
-	public static DefaultAttributeContainer.Builder createAttributes() {
-		return HostileEntity.createHostileAttributes()
-			.add(EntityAttributes.GENERIC_FOLLOW_RANGE, 35.0)
-			.add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.23000000417232513)
-			.add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 5.0)
-			.add(EntityAttributes.GENERIC_ARMOR, 4.0)
-			.add(EntityAttributes.ZOMBIE_SPAWN_REINFORCEMENTS);
+	public static AttributeSupplier.Builder createAttributes() {
+		return Monster.createMobAttributes()
+				.add(Attributes.MAX_HEALTH, 18)
+				.add(Attributes.MOVEMENT_SPEED, 0.23000000417232513)
+				.add(Attributes.ATTACK_DAMAGE, 5.0)
+				.add(Attributes.FOLLOW_RANGE, 35.0)
+				.add(Attributes.ARMOR, 4)
+				.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE)
+				;
 	}
 }

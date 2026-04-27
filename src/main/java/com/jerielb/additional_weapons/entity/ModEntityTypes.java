@@ -1,6 +1,7 @@
 package com.jerielb.additional_weapons.entity;
 
 import com.jerielb.additional_weapons.AdditionalWeapons;
+import com.jerielb.additional_weapons.entity.custom.BanditEntity;
 import com.jerielb.additional_weapons.entity.custom.ShadowEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.core.Registry;
@@ -13,12 +14,12 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 
 public class ModEntityTypes {
-//	public static final EntityType<BanditEntity> BANDIT = register(
-//			"bandit",
-//			EntityType.Builder.<BanditEntity>of(BanditEntity::new, MobCategory.MONSTER)
-//					.sized(0.6f, 1.95f)
-//	);
-//
+	public static final EntityType<BanditEntity> BANDIT = register(
+			"bandit",
+			EntityType.Builder.<BanditEntity>of(BanditEntity::new, MobCategory.MONSTER)
+					.sized(0.6f, 1.95f)
+	);
+
 //	public static final EntityType<PirateEntity> PIRATE = Registry.register(
 //			Registries.ENTITY_TYPE,
 //			Identifier.of(AdditionalWeapons.MOD_ID, "pirate"),
@@ -65,11 +66,11 @@ public class ModEntityTypes {
 	public static void registerModEntityTypes() {
 		AdditionalWeapons.LOGGER.info("Registering Mod EntityTypes for " + AdditionalWeapons.MOD_ID);
 
-//		FabricDefaultAttributeRegistry.register(BANDIT, BanditEntity.createCubeAttributes());
-//		FabricDefaultAttributeRegistry.register(PIRATE, PirateEntity.createCubeAttributes());
-//		FabricDefaultAttributeRegistry.register(POWER_WILD, PowerWildEntity.createCubeAttributes());
-		FabricDefaultAttributeRegistry.register(SHADOW, ShadowEntity.createCubeAttributes());
-//		FabricDefaultAttributeRegistry.register(SOLDIER, SoldierEntity.createCubeAttributes());
-//		FabricDefaultAttributeRegistry.register(WHITE_MUSHROOM, WhiteMushroomEntity.createCubeAttributes());
+		FabricDefaultAttributeRegistry.register(BANDIT, BanditEntity.createAttributes());
+//		FabricDefaultAttributeRegistry.register(PIRATE, PirateEntity.createAttributes());
+//		FabricDefaultAttributeRegistry.register(POWER_WILD, PowerWildEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(SHADOW, ShadowEntity.createAttributes());
+//		FabricDefaultAttributeRegistry.register(SOLDIER, SoldierEntity.createAttributes());
+//		FabricDefaultAttributeRegistry.register(WHITE_MUSHROOM, WhiteMushroomEntity.createAttributes());
 	}
 }

@@ -20,7 +20,6 @@ public class AdditionalWeapons implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
-//		ModEntities.registerModEntities();
 //		ModEntitySpawns.addSpawns();
 		ModEntityTypes.registerModEntityTypes();
 

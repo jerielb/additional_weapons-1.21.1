@@ -1,6 +1,7 @@
 package com.jerielb.additional_weapons;
 
 import com.jerielb.additional_weapons.entity.ModEntityTypes;
+import com.jerielb.additional_weapons.entity.client.BanditEntityRenderer;
 import com.jerielb.additional_weapons.entity.client.ModEntityModelLayers;
 import com.jerielb.additional_weapons.entity.client.ShadowEntityRenderer;
 import net.fabricmc.api.ClientModInitializer;
@@ -18,5 +19,6 @@ public class AdditionalWeaponsClient implements ClientModInitializer {
 		
 		ModEntityModelLayers.registerModelLayers();
 		EntityRenderers.register(ModEntityTypes.SHADOW, ShadowEntityRenderer::new);
+		EntityRenderers.register(ModEntityTypes.BANDIT, BanditEntityRenderer::new);
 	}
 }
