@@ -1,6 +1,7 @@
 package com.jerielb.additional_weapons;
 
 import com.jerielb.additional_weapons.block.ModBlocks;
+import com.jerielb.additional_weapons.entity.ModEntityTypes;
 import com.jerielb.additional_weapons.item.ModItems;
 import com.jerielb.additional_weapons.item.ModItemsGroup;
 import com.jerielb.additional_weapons.villager.ModVillagers;
@@ -21,6 +22,7 @@ public class AdditionalWeapons implements ModInitializer {
 
 //		ModEntities.registerModEntities();
 //		ModEntitySpawns.addSpawns();
+		ModEntityTypes.registerModEntityTypes();
 
 		ModVillagers.registerVillagers();
 	}

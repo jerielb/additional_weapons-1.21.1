@@ -1,22 +1,34 @@
 package com.jerielb.additional_weapons.entity.client;
 
 import com.jerielb.additional_weapons.AdditionalWeapons;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
-import net.minecraft.client.render.entity.CreeperEntityRenderer;
-import net.minecraft.client.render.entity.EntityRendererFactory;
-import net.minecraft.entity.mob.CreeperEntity;
-import net.minecraft.util.Identifier;
+import com.jerielb.additional_weapons.entity.custom.ShadowEntity;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.resources.Identifier;
 
-@Environment(EnvType.CLIENT)
-public class ShadowEntityRenderer extends CreeperEntityRenderer {
-	private static final Identifier TEXTURE = Identifier.of(AdditionalWeapons.MOD_ID, "textures/entity/shadow.png");
+public class ShadowEntityRenderer extends MobRenderer<ShadowEntity, ShadowEntityRenderState, ShadowEntityModel> {
+	private static final Identifier TEXTURE = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/shadow.png");
 	
-	public ShadowEntityRenderer(EntityRendererFactory.Context context) {
-		super(context);
+	public ShadowEntityRenderer(EntityRendererProvider.Context context) {
+		super(context, new ShadowEntityModel(context.bakeLayer(ModEntityModelLayers.SHADOW), ShadowEntityAnimations.SHADOW_ANIMATION_IDLE), 0.375f); // 0.375 shadow radius
 	}
 	
-	public Identifier getTexture(CreeperEntity creeperEntity) {
+	@Override
+	public ShadowEntityRenderState createRenderState() {
+		return new ShadowEntityRenderState();
+	}
+	
+	@Override
+	public Identifier getTextureLocation(ShadowEntityRenderState state) {
 		return TEXTURE;
+	}
+	
+	public void extractRenderState(final ShadowEntity entity, final ShadowEntityRenderState state, final float partialTicks) {
+		super.extractRenderState(entity, state, partialTicks);
+		extractAdditionalState(entity, state, partialTicks);
+	}
+	
+	static void extractAdditionalState(ShadowEntity entity, ShadowEntityRenderState state, float partialTicks) {
+		state.idleAnimationState.copyFrom(entity.idleAnimationState);
 	}
 }
