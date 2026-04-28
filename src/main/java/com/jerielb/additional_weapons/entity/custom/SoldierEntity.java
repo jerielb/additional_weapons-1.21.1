@@ -31,10 +31,12 @@ public class SoldierEntity extends Zombie {
 	
 	public static void init() {
 		BiomeModifications.addSpawn(
-				BiomeSelectors.foundInOverworld().and(BiomeSelectors.excludeByKey(Biomes.MUSHROOM_FIELDS, Biomes.DEEP_DARK)),
+				BiomeSelectors.foundInOverworld().and(BiomeSelectors.includeByKey(
+						Biomes.FOREST, Biomes.BIRCH_FOREST // Forest*
+				)),
 				MobCategory.MONSTER,
 				ModEntityTypes.SOLDIER,
-				50, 1, 2
+				25, 1, 2
 		);
 		
 		SpawnPlacements.register(ModEntityTypes.SOLDIER, SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkSurfaceMonstersSpawnRules);

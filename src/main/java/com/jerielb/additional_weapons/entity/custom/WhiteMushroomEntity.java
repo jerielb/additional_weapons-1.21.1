@@ -31,10 +31,12 @@ public class WhiteMushroomEntity extends Zombie {
 	
 	public static void init() {
 		BiomeModifications.addSpawn(
-				BiomeSelectors.foundInOverworld().and(BiomeSelectors.excludeByKey(Biomes.MUSHROOM_FIELDS, Biomes.DEEP_DARK)),
+				BiomeSelectors.foundInOverworld().and(BiomeSelectors.includeByKey(
+						Biomes.SWAMP, Biomes.MANGROVE_SWAMP // Swamp*
+				)),
 				MobCategory.MONSTER,
 				ModEntityTypes.WHITE_MUSHROOM,
-				50, 1, 2
+				25, 1, 2
 		);
 		
 		SpawnPlacements.register(ModEntityTypes.WHITE_MUSHROOM, SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkSurfaceMonstersSpawnRules);

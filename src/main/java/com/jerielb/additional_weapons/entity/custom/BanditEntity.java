@@ -30,10 +30,14 @@ public class BanditEntity extends Zombie {
 	
 	public static void init() {
 		BiomeModifications.addSpawn(
-				BiomeSelectors.foundInOverworld().and(BiomeSelectors.excludeByKey(Biomes.MUSHROOM_FIELDS, Biomes.DEEP_DARK)),
+				BiomeSelectors.foundInOverworld().and(BiomeSelectors.includeByKey(
+						Biomes.DESERT,  // Desert
+						Biomes.BADLANDS, Biomes.ERODED_BADLANDS, Biomes.WOODED_BADLANDS // Badlands*
+						// Savanna?
+				)),
 				MobCategory.MONSTER,
 				ModEntityTypes.BANDIT,
-				50, 1, 2
+				25, 1, 2
 		);
 		
 		SpawnPlacements.register(ModEntityTypes.BANDIT, SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkSurfaceMonstersSpawnRules);
