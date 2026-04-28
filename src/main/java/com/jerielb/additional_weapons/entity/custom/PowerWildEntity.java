@@ -37,7 +37,7 @@ public class PowerWildEntity extends Zombie {
 				)),
 				MobCategory.MONSTER,
 				ModEntityTypes.POWER_WILD,
-				25, 1, 2
+				50, 1, 2
 		);
 		
 		SpawnPlacements.register(ModEntityTypes.POWER_WILD, SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkSurfaceMonstersSpawnRules);

@@ -36,7 +36,7 @@ public class SoldierEntity extends Zombie {
 				)),
 				MobCategory.MONSTER,
 				ModEntityTypes.SOLDIER,
-				25, 1, 2
+				50, 1, 2
 		);
 		
 		SpawnPlacements.register(ModEntityTypes.SOLDIER, SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkSurfaceMonstersSpawnRules);

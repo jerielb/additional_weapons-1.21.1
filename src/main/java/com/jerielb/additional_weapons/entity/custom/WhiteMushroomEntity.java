@@ -36,7 +36,7 @@ public class WhiteMushroomEntity extends Zombie {
 				)),
 				MobCategory.MONSTER,
 				ModEntityTypes.WHITE_MUSHROOM,
-				25, 1, 2
+				50, 1, 2
 		);
 		
 		SpawnPlacements.register(ModEntityTypes.WHITE_MUSHROOM, SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkSurfaceMonstersSpawnRules);

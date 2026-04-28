@@ -37,7 +37,7 @@ public class PirateEntity extends Zombie {
 				)),
 				MobCategory.MONSTER,
 				ModEntityTypes.PIRATE,
-				25, 1, 2
+				50, 1, 2
 		);
 		
 		SpawnPlacements.register(ModEntityTypes.PIRATE, SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkSurfaceMonstersSpawnRules);

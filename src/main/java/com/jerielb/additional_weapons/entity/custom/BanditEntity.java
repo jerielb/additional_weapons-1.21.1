@@ -37,7 +37,7 @@ public class BanditEntity extends Zombie {
 				)),
 				MobCategory.MONSTER,
 				ModEntityTypes.BANDIT,
-				25, 1, 2
+				50, 1, 2
 		);
 		
 		SpawnPlacements.register(ModEntityTypes.BANDIT, SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Monster::checkSurfaceMonstersSpawnRules);
