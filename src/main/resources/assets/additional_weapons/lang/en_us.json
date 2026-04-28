@@ -36,10 +36,10 @@
   "item.additional_weapons.white_mushroom_spawn_egg": "White Mushroom Spawn Egg",
   "item.additional_weapons.shadow_spawn_egg": "Shadow Spawn Egg",
   "item.additional_weapons.white_mushroom_spawn_egg": "White Mushroom Spawn Egg",
-  "entities.additional_weapons.soldier": "Soldier",
-  "entities.additional_weapons.bandit": "Bandit",
-  "entities.additional_weapons.pirate": "Pirate",
-  "entities.additional_weapons.power_wild": "Power Wild",
-  "entities.additional_weapons.white_mushroom": "White Mushroom",
-  "entities.additional_weapons.shadow": "Shadow"
+  "entity.additional_weapons.soldier": "Soldier",
+  "entity.additional_weapons.bandit": "Bandit",
+  "entity.additional_weapons.pirate": "Pirate",
+  "entity.additional_weapons.power_wild": "Power Wild",
+  "entity.additional_weapons.white_mushroom": "White Mushroom",
+  "entity.additional_weapons.shadow": "Shadow"
 }

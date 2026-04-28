@@ -2,6 +2,7 @@ package com.jerielb.additional_weapons.entity;
 
 import com.jerielb.additional_weapons.AdditionalWeapons;
 import com.jerielb.additional_weapons.entity.custom.BanditEntity;
+import com.jerielb.additional_weapons.entity.custom.PirateEntity;
 import com.jerielb.additional_weapons.entity.custom.ShadowEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.core.Registry;
@@ -20,14 +21,12 @@ public class ModEntityTypes {
 					.sized(0.6f, 1.95f)
 	);
 
-//	public static final EntityType<PirateEntity> PIRATE = Registry.register(
-//			Registries.ENTITY_TYPE,
-//			Identifier.of(AdditionalWeapons.MOD_ID, "pirate"),
-//			EntityType.Builder.create(PirateEntity::new, SpawnGroup.MONSTER)
-//					.dimensions(0.6F, 1.95F)
-//					.build()
-//	);
-//
+	public static final EntityType<PirateEntity> PIRATE = register(
+			"pirate",
+			EntityType.Builder.<PirateEntity>of(PirateEntity::new, MobCategory.MONSTER)
+					.sized(0.6f, 1.95f)
+	);
+
 //	public static final EntityType<PowerWildEntity> POWER_WILD = Registry.register(
 //			Registries.ENTITY_TYPE,
 //			Identifier.of(AdditionalWeapons.MOD_ID, "power_wild"),
@@ -65,11 +64,12 @@ public class ModEntityTypes {
 
 	public static void registerModEntityTypes() {
 		AdditionalWeapons.LOGGER.info("Registering Mod EntityTypes for " + AdditionalWeapons.MOD_ID);
-
-		FabricDefaultAttributeRegistry.register(BANDIT, BanditEntity.createAttributes());
-//		FabricDefaultAttributeRegistry.register(PIRATE, PirateEntity.createAttributes());
-//		FabricDefaultAttributeRegistry.register(POWER_WILD, PowerWildEntity.createAttributes());
+		
 		FabricDefaultAttributeRegistry.register(SHADOW, ShadowEntity.createAttributes());
+		
+		FabricDefaultAttributeRegistry.register(BANDIT, BanditEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(PIRATE, PirateEntity.createAttributes());
+//		FabricDefaultAttributeRegistry.register(POWER_WILD, PowerWildEntity.createAttributes());
 //		FabricDefaultAttributeRegistry.register(SOLDIER, SoldierEntity.createAttributes());
 //		FabricDefaultAttributeRegistry.register(WHITE_MUSHROOM, WhiteMushroomEntity.createAttributes());
 	}

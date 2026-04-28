@@ -3,20 +3,21 @@ package com.jerielb.additional_weapons.entity.client;
 import com.jerielb.additional_weapons.AdditionalWeapons;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.render.entity.EntityRendererFactory;
-import net.minecraft.client.render.entity.ZombieEntityRenderer;
-import net.minecraft.entity.mob.ZombieEntity;
-import net.minecraft.util.Identifier;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.entity.ZombieRenderer;
+import net.minecraft.client.renderer.entity.state.ZombieRenderState;
+import net.minecraft.resources.Identifier;
 
 @Environment(EnvType.CLIENT)
-public class PirateEntityRenderer extends ZombieEntityRenderer {
-	private static final Identifier TEXTURE = Identifier.of(AdditionalWeapons.MOD_ID, "textures/entity/pirate.png");
-	
-	public PirateEntityRenderer(EntityRendererFactory.Context context) {
+public class PirateEntityRenderer extends ZombieRenderer {
+	private static final Identifier PIRATE = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/pirate.png");
+//	private static final Identifier PIRATE_BABY = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/pirate_baby.png");
+
+	public PirateEntityRenderer(EntityRendererProvider.Context context) {
 		super(context);
 	}
-	
-	public Identifier getTexture(ZombieEntity zombieEntity) {
-		return TEXTURE;
+
+	public Identifier getTextureLocation(final ZombieRenderState state) {
+		return state.isBaby ? PIRATE : PIRATE;
 	}
 }
