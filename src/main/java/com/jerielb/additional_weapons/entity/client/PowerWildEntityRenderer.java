@@ -3,20 +3,21 @@ package com.jerielb.additional_weapons.entity.client;
 import com.jerielb.additional_weapons.AdditionalWeapons;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.render.entity.EntityRendererFactory;
-import net.minecraft.client.render.entity.ZombieEntityRenderer;
-import net.minecraft.entity.mob.ZombieEntity;
-import net.minecraft.util.Identifier;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.entity.ZombieRenderer;
+import net.minecraft.client.renderer.entity.state.ZombieRenderState;
+import net.minecraft.resources.Identifier;
 
 @Environment(EnvType.CLIENT)
-public class PowerWildEntityRenderer extends ZombieEntityRenderer {
-	private static final Identifier TEXTURE = Identifier.of(AdditionalWeapons.MOD_ID, "textures/entity/power_wild.png");
-	
-	public PowerWildEntityRenderer(EntityRendererFactory.Context context) {
+public class PowerWildEntityRenderer extends ZombieRenderer {
+	private static final Identifier POWER_WILD = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/power_wild.png");
+//	private static final Identifier POWER_WILD_BABY = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/power_wild_baby.png");
+
+	public PowerWildEntityRenderer(EntityRendererProvider.Context context) {
 		super(context);
 	}
 	
-	public Identifier getTexture(ZombieEntity zombieEntity) {
-		return TEXTURE;
+	public Identifier getTextureLocation(final ZombieRenderState state) {
+		return state.isBaby ? POWER_WILD : POWER_WILD;
 	}
 }

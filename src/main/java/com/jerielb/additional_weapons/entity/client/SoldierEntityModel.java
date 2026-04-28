@@ -1,19 +1,14 @@
 package com.jerielb.additional_weapons.entity.client;
 
-import com.jerielb.additional_weapons.entity.custom.SoldierEntity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.model.ModelPart;
-import net.minecraft.client.render.entity.model.AbstractZombieModel;
+import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.model.monster.zombie.AbstractZombieModel;
+import net.minecraft.client.renderer.entity.state.ZombieRenderState;
 
 @Environment(EnvType.CLIENT)
-public class SoldierEntityModel<T extends SoldierEntity> extends AbstractZombieModel<SoldierEntity> {
-	public SoldierEntityModel(ModelPart modelPart) {
-		super(modelPart);
-	}
-	
-	@Override
-	public boolean isAttacking(SoldierEntity entity) {
-		return entity.isAttacking();
+public class SoldierEntityModel<T extends ZombieRenderState> extends AbstractZombieModel<T> {
+	public SoldierEntityModel(ModelPart root) {
+		super(root);
 	}
 }
