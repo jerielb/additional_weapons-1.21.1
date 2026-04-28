@@ -11,13 +11,13 @@ import net.minecraft.resources.Identifier;
 @Environment(EnvType.CLIENT)
 public class PirateEntityRenderer extends ZombieRenderer {
 	private static final Identifier PIRATE = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/pirate.png");
-//	private static final Identifier PIRATE_BABY = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/pirate_baby.png");
+	private static final Identifier PIRATE_BABY = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/pirate_baby.png");
 
 	public PirateEntityRenderer(EntityRendererProvider.Context context) {
 		super(context);
 	}
 
 	public Identifier getTextureLocation(final ZombieRenderState state) {
-		return state.isBaby ? PIRATE : PIRATE;
+		return state.isBaby ? PIRATE_BABY : PIRATE;
 	}
 }

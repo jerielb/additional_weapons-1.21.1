@@ -12,13 +12,13 @@ import net.minecraft.resources.Identifier;
 @Environment(EnvType.CLIENT)
 public class BanditEntityRenderer extends ZombieRenderer {
 	private static final Identifier BANDIT = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/bandit.png");
-//	private static final Identifier BANDIT_BABY = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/bandit_baby.png");
+	private static final Identifier BANDIT_BABY = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/bandit_baby.png");
 
 	public BanditEntityRenderer(EntityRendererProvider.Context context) {
-		super(context, ModelLayers.HUSK, ModelLayers.HUSK_BABY, ModelLayers.HUSK_ARMOR, ModelLayers.HUSK_BABY_ARMOR);
+		super(context);
 	}
 	
 	public Identifier getTextureLocation(final ZombieRenderState state) {
-		return state.isBaby ? BANDIT : BANDIT;
+		return state.isBaby ? BANDIT_BABY : BANDIT;
 	}
 }

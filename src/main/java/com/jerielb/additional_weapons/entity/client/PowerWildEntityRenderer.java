@@ -11,13 +11,13 @@ import net.minecraft.resources.Identifier;
 @Environment(EnvType.CLIENT)
 public class PowerWildEntityRenderer extends ZombieRenderer {
 	private static final Identifier POWER_WILD = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/power_wild.png");
-//	private static final Identifier POWER_WILD_BABY = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/power_wild_baby.png");
+	private static final Identifier POWER_WILD_BABY = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/power_wild_baby.png");
 
 	public PowerWildEntityRenderer(EntityRendererProvider.Context context) {
 		super(context);
 	}
 	
 	public Identifier getTextureLocation(final ZombieRenderState state) {
-		return state.isBaby ? POWER_WILD : POWER_WILD;
+		return state.isBaby ? POWER_WILD_BABY : POWER_WILD;
 	}
 }
