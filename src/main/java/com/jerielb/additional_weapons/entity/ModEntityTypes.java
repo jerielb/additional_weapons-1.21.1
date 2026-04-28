@@ -64,5 +64,17 @@ public class ModEntityTypes {
 		FabricDefaultAttributeRegistry.register(POWER_WILD, PowerWildEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(SOLDIER, SoldierEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(WHITE_MUSHROOM, WhiteMushroomEntity.createAttributes());
+		
+		initModEntities();
+	}
+	
+	public static void initModEntities() {
+//		ShadowEntity.init();
+		
+		BanditEntity.init();
+		PirateEntity.init();
+		PowerWildEntity.init();
+		SoldierEntity.init();
+		WhiteMushroomEntity.init();
 	}
 }
