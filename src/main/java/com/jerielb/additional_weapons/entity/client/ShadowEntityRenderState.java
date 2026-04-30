@@ -7,9 +7,7 @@ import net.minecraft.world.entity.AnimationState;
 
 @Environment(EnvType.CLIENT)
 public class ShadowEntityRenderState extends LivingEntityRenderState {
-	public final AnimationState idleAnimationState;
+	public final AnimationState idleAnimationState = new AnimationState();
 	
-	public ShadowEntityRenderState() {
-		this.idleAnimationState = new AnimationState();
-	}
+	public ShadowEntityRenderState() {}
 }

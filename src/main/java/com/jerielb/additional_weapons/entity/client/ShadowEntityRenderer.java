@@ -10,7 +10,7 @@ public class ShadowEntityRenderer extends MobRenderer<ShadowEntity, ShadowEntity
 	private static final Identifier TEXTURE = Identifier.fromNamespaceAndPath(AdditionalWeapons.MOD_ID, "textures/entity/shadow.png");
 	
 	public ShadowEntityRenderer(EntityRendererProvider.Context context) {
-		super(context, new ShadowEntityModel(context.bakeLayer(ModEntityModelLayers.SHADOW), ShadowEntityAnimations.SHADOW_ANIMATION_IDLE), 0.375f); // 0.375 shadow radius
+		super(context, new ShadowEntityModel(context.bakeLayer(ModEntityModelLayers.SHADOW)), 0.375f); // 0.375 shadow radius
 	}
 	
 	@Override

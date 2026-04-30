@@ -99,4 +99,9 @@ public class ShadowEntity extends Monster {
 	
 	protected void registerCustomGoals() {
 	}
+	
+	protected void updateWalkAnimation(final float distance) {
+		float targetSpeed = Math.min(distance * 25.0F, 3.0F);
+		this.walkAnimation.update(targetSpeed, 0.4F, 1.0F);
+	}
 }
